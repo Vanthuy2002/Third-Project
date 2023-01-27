@@ -51,6 +51,62 @@
           <div class="header__right">
             <a href="#!">Free Template</a>
           </div>
+          <!-- menu__reponsive -->
+          <div class="header__tablet">
+            <div class="header__logo">Easy</div>
+            <button
+              class="header__icon"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample">
+              <i class="icon__reponsive fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- sidebar -->
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <div class="header__logo-sidebar">Easy</div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="sidebar__list">
+              <li><a class="sidebar__link" href="#!">Home</a></li>
+              <li><a class="sidebar__link" href="#!">InnerPage</a></li>
+              <li><a class="sidebar__link" href="#!">Contact Us</a></li>
+              <div class="dropdown mt-3">
+                <button
+                  class="sidebar__btn dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu sidebar__full">
+                  <li><a class="dropdown-item" href="#!">Menu One</a></li>
+                  <li><a class="dropdown-item" href="#!">Menu Two</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#!">Menu Three</a>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+            <div class="sidebar__option">
+              <a href="#!">Free Template</a>
+            </div>
+          </div>
         </div>
 
         <!-- information -->
@@ -262,7 +318,7 @@
 
           <div class="pricing__list">
             <div class="row">
-              <div class="col">
+              <div class="col col-xl-4 col-sm-6 col-12">
                 <div class="pricing__item">
                   <h3 class="pricing__item-title">Personal</h3>
                   <p class="pricing__item-desc">
@@ -270,13 +326,13 @@
                     mountains
                   </p>
                   <div class="test">
-                      <h3 class="pricing__item-num">$29</h3>
-                      <p class="pricing__item-time">Per Month</p>
-                    </div>
-                    <div class="priceYear">
-                        <h3 class="pricing__item-num">$99</h3>
-                        <p class="pricing__item-time">Per Year</p>
-                    </div>
+                    <h3 class="pricing__item-num">$29</h3>
+                    <p class="pricing__item-time">Per Month</p>
+                  </div>
+                  <div class="priceYear">
+                    <h3 class="pricing__item-num">$99</h3>
+                    <p class="pricing__item-time">Per Year</p>
+                  </div>
                   <ul>
                     <li>
                       <i class="icon fa-solid fa-circle-check"></i>
@@ -293,7 +349,7 @@
                 </div>
               </div>
 
-              <div class="col">
+              <div class="col col-xl-4 col-sm-6 col-12">
                 <div class="pricing__item have__bg">
                   <h3 class="pricing__item-title">Enterprise</h3>
                   <p class="pricing__item-desc">
@@ -305,8 +361,8 @@
                     <p class="pricing__item-time">Per Month</p>
                   </div>
                   <div class="priceYear">
-                      <h3 class="pricing__item-num">$199</h3>
-                      <p class="pricing__item-time">Per Year</p>
+                    <h3 class="pricing__item-num">$199</h3>
+                    <p class="pricing__item-time">Per Year</p>
                   </div>
                   <ul>
                     <li>
@@ -324,7 +380,7 @@
                 </div>
               </div>
 
-              <div class="col">
+              <div class="col col-xl-4 col-sm-6 col-12">
                 <div class="pricing__item">
                   <h3 class="pricing__item-title">Enterprise</h3>
                   <p class="pricing__item-desc">
@@ -336,8 +392,8 @@
                     <p class="pricing__item-time">Per Month</p>
                   </div>
                   <div class="priceYear">
-                      <h3 class="pricing__item-num">$599</h3>
-                      <p class="pricing__item-time">Per Year</p>
+                    <h3 class="pricing__item-num">$599</h3>
+                    <p class="pricing__item-time">Per Year</p>
                   </div>
                   <ul>
                     <li>
@@ -550,10 +606,11 @@
       <!-- end contact -->
       <div class="to__top">
         <ul>
-            <li>
-                <a href="#">
-                <i class="top__icon fa-solid fa-chevron-up"></i>
-            </a></li>
+          <li>
+            <a href="#">
+              <i class="top__icon fa-solid fa-chevron-up"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </div>

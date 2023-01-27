@@ -105,7 +105,7 @@ body{
 }
 .infor__content-desc{
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 300;
 }
 .infor__input{
     margin-right: 5px;
@@ -128,6 +128,9 @@ body{
 }
 .infor__img{
     margin: 24px 0;
+}
+.infor__img img{
+    width: 100%;
 }
 
 /* feature */
@@ -444,6 +447,10 @@ body{
     font-size: 25px;
     color: var(--bs-black);
 }
+.header__tablet,
+.priceYear{
+    display: none;
+}
 /* reponsive web */
 @media (max-width: 991.98px) {
     .infor{
@@ -453,7 +460,72 @@ body{
     .infor__content{
         margin: 16px 0;
     }
+    .header .header__right,
+    .header .header__left{
+        display: none;
+    }
+    .header__tablet{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__logo{
+        font-size: 36px;
+    }
+    .header__icon{
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+    .header__icon .icon__reponsive{
+        font-size: 36px;
+    }
 }
-.priceYear{
-    display: none;
+
+.header__logo-sidebar{
+    font-size: 30px;
+    font-weight: 700;
+}
+.sidebar__list{
+    padding-left: 0;
+    list-style: none;
+}
+.sidebar__list li > .sidebar__link{
+    display: block;
+    text-decoration: none;
+    color: var(--bs-black);
+    padding: 12px 0;
+    font-weight: 400;
+}
+.sidebar__list li > .sidebar__link:hover{
+    color: #ff6363;
+}
+.sidebar__btn{
+    outline: none;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+.sidebar__full{
+    border: none;
+    width: 100%;
+}
+.sidebar__full > li > a{
+    padding: 8px 0;
+}
+.sidebar__option{
+    margin-top: 28px;
+}
+.sidebar__option a{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: var(--bs-black);
+    padding: 12px 0;
+    border-radius: 5px;
+    background-color: #ff6363;
+}
+.sidebar__option a:hover{
+    opacity: 0.88;
 }
